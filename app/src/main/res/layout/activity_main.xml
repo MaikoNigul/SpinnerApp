@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    tools:context="com.example.android.spinner.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Options"
+        android:textSize="25sp"
+        android:id="@+id/textView1"
+        android:layout_above="@+id/Gender"
+        android:layout_alignLeft="@+id/Next"
+        android:layout_alignStart="@+id/Next"
+        android:layout_marginBottom="15dp" />
+    <Spinner
+        android:id="@+id/Gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/Gender"
+        android:layout_above="@+id/Android"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="43dp" />
+    <Button
+        android:id="@+id/Next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp" />
+    <Spinner
+        android:id="@+id/Android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/Android_Version"
+        android:layout_above="@+id/Next"
+        android:layout_alignLeft="@+id/Gender"
+        android:layout_alignStart="@+id/Gender"
+        android:layout_marginBottom="73dp" />
+</RelativeLayout>
+
